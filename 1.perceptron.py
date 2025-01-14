@@ -32,5 +32,4 @@ print("Testing the AND gate after training:")
 for i in range(4):
     ans = x[i][0] * w1 + x[i][1] * w2 + bias
     result = sigmoid(ans)
-    rounded_number = round(result, 10)
-    print(f"{rounded_number} Predicted : {1 if rounded_number>0.5 else 0}")
+    print(f"Input:{x[i][0]}, Output:{y[i]:.3f},Predicted : {1 if result>0.5 else 0}")
